@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #bad0dc; /* Off White */
+  color: #26ee8ae8; /* Dark Gray */
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Add styles for the flex container */
+/* Style the container */
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+}
+
+/* Style the position center to use a typewriter effect */
+.position-center {
+  font-family: 'Arial', sans-serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #0a21b0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #ff6a00; /* Adds a cursor effect */
+  padding-right: 1rem; /* Space after the text */
+  animation: typing 5s steps(20) 0s forwards, blink 0.75s step-end infinite ;
+}
+
+/* Typewriter effect for the text */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 45%;
+  }
+}
+
+/* Cursor blink effect */
+@keyframes blink {
+  0%,
+  100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ff6a00;
+  }
+}
+
+/* If you want the letters to pop in from 'A' to the letter */
+.position-center span {
+  display: inline-block;
+  opacity: 0;
+  animation: popIn 1s forwards;
+}
+
+.position-center span:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.position-center span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.position-center span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.position-center span:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.position-center span:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.position-center span:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.position-center span:nth-child(7) {
+  animation-delay: 0.7s;
+}
+.position-center span:nth-child(8) {
+  animation-delay: 0.8s;
+}
+.position-center span:nth-child(9) {
+  animation-delay: 0.9s;
+}
+
+/* Pop-in animation for each letter */
+@keyframes popIn {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.link-button {
+  height:25px;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  margin-bottom: 15px;
+  color: #0817ea; /* Deep Purple */
+  border: 2px solid #5d3fd3;
+  background-color: #92f706e1; /* Light Purple */
+  border-radius: 15px;
+  padding: 4px;
+  box-shadow: 0 4px 6px rgba(15, 206, 85, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.link-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.92);
+}

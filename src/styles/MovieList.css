@@ -1,0 +1,38 @@
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    height: 500px;
+    margin-top: 20px;
+  }
+  
+  .movie-card {
+    height:250px;
+    background-color: #ede7f6; /* Light Purple */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(15, 206, 85, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.92);
+  }
+  
+  .movie-card h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #5d3fd3; /* Deep Purple */
+  }
+  .movie-card h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #1774e6; /* Deep Purple */
+  }
+  
+  .movie-card p {
+    font-size: 14px;
+    color: #555555; /* Subtle Gray */
+  }
+  

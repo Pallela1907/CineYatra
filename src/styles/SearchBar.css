@@ -1,0 +1,22 @@
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #5d3fd3; /* Deep Purple */
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-bar input:focus {
+    outline: none;
+    border-color: #ffd700; /* Soft Yellow */
+    box-shadow: 0 0 5px #ffd700;
+  }
+  
